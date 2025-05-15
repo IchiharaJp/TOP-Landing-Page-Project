@@ -1,2 +1,7 @@
 # TOP-Landing-Page-Project
-Project: Landing Page from the free online Odin Project Foundations Course
+Description: Project Landing Page from the free online Odin Project Foundations Course that focuses mainly on flexbox using HTML and CSS.
+Goal: To create a basic simple website using flexbox in CSS and also make sure the responsive web design 
+
+  
+ 
+
