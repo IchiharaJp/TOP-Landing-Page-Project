@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 100%;
+  width: 100%;
+}
+
+blockquote,
+header,
+div,
+ul,
+main,
+section,
+body {
+  padding: 0;
+  margin: 0;
+}
+header,
+#mid_header,
+footer {
+  background-image: linear-gradient(90deg, #d54b33 0%, #daae51 100%);
+}
+#mobile_text {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-basis: 100%;
+  max-height: 8vh;
+  align-items: center;
+}
+header img {
+  max-height: 6vh;
+  margin: 0 0.6% 0 10%;
+}
+header h2 {
+  margin-right: 30%;
+  color: white;
+  border: 1px solid white;
+  border-style: solid none;
+}
+#nav_menu {
+  max-height: 8vh;
+  flex-basis: 35%;
+}
+#nav_menu ul {
+  display: flex;
+  list-style-type: none;
+}
+#nav_menu ul li {
+  flex-basis: 25%;
+  text-align: center;
+  border-right: 2px solid white;
+}
+#nav_menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 108%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mid_header {
+  display: flex;
+  flex-basis: 100%;
+  padding: 2% 0;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+#mid_header img {
+  max-height: 17em;
+  max-width: 80%;
+}
+#main_content {
+  flex-basis: 27%;
+  color: white;
+  margin: 0 9% 0 10%;
+  border: 1px solid white;
+  border-style: none solid;
+  padding: 0 6em;
+}
+#main_content h1 {
+  margin: 0;
+}
+#main_content p {
+  line-height: 1.4em;
+}
+#main_content em {
+  font-size: 80%;
+}
+#main_content button {
+  padding: 0.6em 2em;
+  border-radius: 0.5em;
+  border-width: 1px;
+  background-color: #4e81ee;
+}
+#main_content button a,
+#sign_up button a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 1.1em;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0 5em;
+}
+section #dishes {
+  margin-top: 2em;
+  display: flex;
+  list-style-type: none;
+}
+section #dishes li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 7em;
+}
+section #dishes li:last-of-type {
+  margin: 0;
+}
+section #dishes img {
+  max-width: 13em;
+  border-radius: 0.7em;
+  border: 2px solid black;
+  margin-bottom: 1em;
+}
+
+blockquote {
+  text-align: center;
+  background-color: #e5e7eb;
+  font-style: italic;
+  font-size: 120%;
+  width: 100%;
+  padding: 5em 0;
+}
+blockquote p {
+  padding: 0 20em;
+}
+blockquote div {
+  text-align: right;
+  margin-right: 4em;
+}
+
+#sign_up {
+  display: flex;
+  background-color: #34afe7;
+  color: white;
+  width: 65%;
+  margin: 5em;
+  justify-content: space-around;
+  border-radius: 15px;
+  padding: 1.5em 5em;
+}
+#sign_up button {
+  align-self: center;
+  padding: 0.6em 2em;
+  border-radius: 0.5em;
+  border-width: 1px;
+  margin-right: 10em;
+  background: none;
+  border: 2px double white;
+}
+
+footer {
+  text-align: center;
+  padding: 3em;
+  color: white;
+  font-size: 70%;
+}
+
+@media only screen and (max-width: 1270px) {
+  section #dishes {
+    display: block;
+    columns: 2;
+    column-gap: 5em;
+  }
+  section #dishes li {
+    margin: 0 0 2em;
+  }
+  section #dishes img {
+    max-width: 22em;
+  }
+  #main_content {
+    border: none;
+    margin-right: 0;
+  }
+  blockquote p {
+    padding: 0 10em;
+  }
+  #sign_up button {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1126px) {
+  #sign_up {
+    flex-direction: column;
+  }
+  #sign_up p {
+    display: none;
+  }
+  #sign_up p#mobile_text {
+    display: inline;
+  }
+  #sign_up button {
+    margin-top: 2em;
+  }
+  #main_content {
+    padding: 0 4em 0 0 ;
+  }
+  header h2 {
+    margin-right: 4em;
+  }
+
+}
+@media only screen and (max-width: 824px) {
+    header {
+        flex-direction: column;
+        max-height: none;
+    }
+    header img, header h2 { margin: 0; }
+    header h2 {
+        border-top: none;
+        margin-bottom: 1em;
+    }
+    header img {
+      margin-top: 1em;
+    }
+    #nav_menu ul li { padding: 0 1em; }
+    #mid_header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #mid_header img {
+      margin-top: 1em;
+    }
+    section #dishes img {
+      width: 80%;
+    }
+    section #dishes {
+      column-gap: normal;
+    }
+    section #dishes li {
+      align-items: center;
+    }
+    blockquote {
+      font-size: smaller;
+    }
+}
+@media only screen and (max-width: 452px) {
+  section #dishes {
+    columns: 1;
+  }
+  blockquote p {
+    padding: 0 1em;
+  }
+}
